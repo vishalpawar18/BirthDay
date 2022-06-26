@@ -1,0 +1,299 @@
+body{
+	margin-top:30px;
+	background-color:#fff;
+}
+nav{
+	color:#fff;
+	padding:0px 25px;
+	height:80px;	
+	background-color:#DCDCDC;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+nav a{
+	color:white;
+}
+ul{
+	list-style:none;
+	text-decoration:none;
+	display:flex;
+	justify-content:space-between;
+}
+ul li a{
+	color:white;
+	text-decoration:none;
+	padding:8px 10px;
+	font-size:30px;
+	padding:10px 20px;
+	border-radius:5px;
+}
+b{
+color:tomato;
+}
+section h2 b{
+	color:cyan;
+}
+.hide{
+	display:none;
+	cursor:pointer;
+}
+.broking{
+	font-family:snap itc; 
+	font-size:50px;
+}
+
+main h1{
+	color:black;
+	font-size:60px;
+	padding-top:60px;
+}
+main h1,h2{
+	color:black;
+	font-family:snap itc; 
+	font-size:50px;
+	padding-top:0px;
+}
+.animation{
+	width:400px;
+	height:400px;
+	animation-name:laki;
+	animation-duration:10s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+@keyframes laki{
+	0%{border-radius:0%;background-image:url("1.jpg");width:400px;height:400px;}
+	40%{border-radius:25%;background-image:url("3.jpg");}
+	70%{border-radius:38%;background-image:url("4.jpg");}
+	100%{border-radius:50%;background-image:url("2.jpg");}
+}
+.base{
+	width:100%;
+	height:30px;
+	text-align:center;
+	font-size:25px;
+	border-radius:50px;
+	color:orange;
+}
+.base:hover span{
+	display:none;
+}
+.base:hover:before{
+	content:"VishU 🐒";
+	text-align:center;
+	font-style:bold;
+}
+
+nav ul li a:hover{
+	background-color:white;
+	color:gray;
+	transition:0.5s;
+}
+#illu{
+	display:flex;
+	justify-content:space-around;
+}
+.btn1{
+  border: 2px solid green;
+  border-radius:10px;
+  background:transparent;
+  color: black;
+  padding: 14px 28px;
+  margin-left:150px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.btn2{
+  border: 2px solid red;
+  border-radius:10px;
+   background:transparent;
+  color: black;
+  padding: 14px 28px;
+  margin-left:30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.btn1:hover{
+	color:#fff;
+	background-color:green;
+}
+.btn2:hover{
+	color:#fff;
+	background-color:red;
+}
+footer a{
+	padding-top:20px;
+	text-decoration:none;
+}
+footer font{
+	padding:0px 20px;
+}
+.social{
+	margin-top:200px;
+    list-style-type: none;
+    overflow: auto;
+    padding: 0;
+    }
+.social > li{
+	
+    float: left;
+    width: 20%;
+    text-align: center;
+    }
+.social > li >a{
+	
+     font-size: 4em;
+     color: #3388dd;
+     text-decoration: none;
+    }
+h1 b{
+	color:cyan;
+}
+.monkey{
+	     right:0px;
+		 width:100px;
+		 height:100px;
+		 animation:meow 10s linear infinite;
+}
+.cat{
+		 right:-500px;
+		 width:100px;
+		 height:100px;
+		 animation:meow 10s linear infinite;
+	 }
+@keyframes meow{
+	100%{
+		transform:translateX(1200px) translateY(-200px) rotate(0);
+	}
+	60%{
+		transform:translateX(800px);
+	}
+	40%{
+		transform:translateX(400px);
+	}
+	0%{
+		transform:translateX(0px) translateY(-200px);
+	}
+}
+@media (max-width:940px)
+{
+	@keyframes meow{
+	100%{
+		transform:translateX(350px) translateY(-40px) rotate(0);
+	}
+	60%{
+		transform:translateX(250px);
+	}
+	40%{
+		transform:translateX(100px);
+	}
+	0%{
+		transform:translateX(0px) translateY(-40px);
+	}
+}
+
+	nav ul{
+		position:fixed;
+		top:0;
+		right:-100%;
+		background:gray;
+		height:100vh;
+		width:50%;
+		display:block;
+		transition:all 0.5s ease;
+	}
+
+	nav ul li{
+		margin:40px 0px;
+	}
+	nav ul li a{
+		font-size:20px;
+		display:block;
+	}
+	.broking{
+	font-family:snap itc; 
+	font-size:35px;
+	}
+	nav{
+	color:white;
+	padding:0px 25px;
+	height:60px;	
+	background-color:gray;
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+	}
+	nav label{
+		padding:0px;
+	}
+
+	.hide{
+	display:block;
+	cursor:pointer;
+	}
+	main h1{
+	font-size:30px;
+	}
+	main h2{
+	font-size:30px;
+	text-align:center;
+	padding-left:0px;
+	}
+	main h3{
+	top:30px;
+	font-size:20px;
+	text-align:center;
+	padding-left:0px;
+	}
+	.btn1{
+	  color: black;
+	  padding: 8px 16px;
+	  margin-left:150px;
+	  font-size: 20px;
+	  cursor: pointer;
+	}
+	.btn2{
+	  padding: 8px 16px;
+	  margin-left:30px;
+	  font-size: 20px;
+	  cursor: pointer;
+	}
+	#illu{
+		display:block;
+	}
+	img{
+		margin-top:30px;
+		height:300px;
+		width:300px;
+	}
+	.social > li >a{
+     font-size: 2em;
+     }
+	 .cat{
+		 left:-50px;
+		 width:50px;
+		 height:50px;
+		 
+	 }
+	 .monkey{
+	     left:0px;
+		 width:50px;
+		 height:50px;
+     }
+	 .animation{
+		width:300px;
+		height:300px;
+	}
+	.besti{
+		width:300px;
+		height:300px;
+	}
+	.family{
+		width:300px;
+		height:300px;
+	}
+	section h2{
+		font-size:30px;
+	}
+}
